@@ -1,0 +1,54 @@
+
+header label{
+    float: right;
+    font-size:28px;
+    margin: 6px 0 px;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgb(51, 51, 51, 0.9);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+.menu a{
+    display:block;
+    color: white;
+    height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: solid 1px rgb(255,255,255,0.3);
+}
+
+.menu a:hover{
+    background: rgb(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+#menu-bar:checked~.menu{
+    transform: translateX(0);
+}
+
+#menu-bar{
+    display: none;
+}
+/*permite establecer los estilos que se aplicaran dependiendo de las dimensiones del dispositivo*/
+@media (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        display: flex;
+        transform: translateX(0);
+    }
+
+    header label{
+        display: none;
+    }
+}
