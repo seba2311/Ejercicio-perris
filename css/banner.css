@@ -26,3 +26,8 @@
     background: white;
     color: tomato;
 }
+@media (max-width: 585px) {
+    #banner .contenedor {
+        top: 50px;
+    }
+}
