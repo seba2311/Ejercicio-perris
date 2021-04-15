@@ -8,6 +8,7 @@
     <title>Mis Perris</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 
 <body>
@@ -41,51 +42,32 @@
 
         </section>
         <section id="bienvenida">
-            <h2>Bienvenidos a nuestro club</h2>
+            <h2>formulario de adopcion de mascota</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, excepturi voluptatibus. Velit corporis
                 ex dolorum eligendi sed voluptas vel laborum, quidem debitis voluptatibus similique ut, unde possimus
                 reprehenderit fuga facilis.</p>
         </section>
 
-        <section id="blog">
-            <h3>Lo ultimo de nuestro blog</h3>
-            <div class="contenedor">
-                <article>
-                    <img src="img/perro2.jpg" alt="">
-                    <h4>Perrunos son amigos</h4>
-                </article>
-                <article>
-                    <img src="img/perro3.jpg" alt="">
-                    <h4>Simpatia perruna</h4>
-                </article>
-                <article>
-                    <img src="img/perro4.png" alt="">
-                    <h4>La linda mascota</h4>
-                </article>
-            </div>
-        </section>
+        <section id="formulario">
+            <form class="form-registro" action="" method="post">
+                <h2 class="form-titulo">Creacion de cuenta de usuario</h2>
+                <div class="contenedor-input">
+                    <input class="col-sm" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese nombre" required minlength="3">
+                    <input class="col-sm" type="text" name="txtRut" id="txtRut" placeholder="Ingrese rut ej. 12345678-9" required minlength="10">
+                    <input class="col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="Ingrese email" required>
+                    <input class="col-sm" type="text" name="txtUsuario" id="txtUsuario" placeholder="Ingrese Usuario" required minlength="3" maxlength="10">
+                    <input class="col-sm" type="password" name="txtPass" id="txtPass" placeholder="Ingrese contraseña" required minlength="8" maxlength="12">
+                    <input class="col-xl" type="text" name="txtFono" id="txtFono" placeholder="Ingrese telefono" required minlength="8">
 
-        <section id="info">
-            <h3>Para muchos de nosotros las mascotas son miembors de nuestra familia</h3>
-            <div class="contenedor">
-                <article>
-                    <img src="img/perro5.jpg" alt="">
-                    <h4>Boby</h4>
-                </article>
-                <article>
-                    <img src="img/perro6.jpg" alt="">
-                    <h4>wilson</h4>
-                </article>
-                <article>
-                    <img src="img/perro7.jpg" alt="">
-                    <h4>spyke</h4>
-                </article>
-                <article>
-                    <img src="img/perro8.jpg" alt="">
-                    <h4>chuleta</h4>
-                </article>
-            </div>
+                    <input class="btn-registrar" type="submit" value="registrar">
+                    <input class="btn-validar" type="button" value="Validar" onclick="validarRut()">
+                </div>
+            </form>
         </section>
+        <script src="js/script.js"></script>
+
+
+
     </main>
 </body>
 
